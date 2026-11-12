@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team | Green Leaf Studio</title>
+  <style>
+    /* General Page Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f5;
+      color: #333;
+      /* Extra top padding so content isn't hidden behind the sticky/fixed nav */
+      padding-top: 70px; 
+    }
+
+    /* POSITION PROPERTY #1: Fixed Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c5e3b;
+      color: white;
+      padding: 15px 30px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      float: left;
+    }
+
+    nav ul {
+      list-style: none;
+      float: right;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Clearfix utility to contain floated elements */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      color: #2c5e3b;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* Team Member Card */
+    .team-member {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      /* POSITION PROPERTY #2: Relative positioning for the role badge */
+      position: relative; 
+    }
+
+    /* POSITION PROPERTY #3: Absolute positioning inside the relative card */
+    .role-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #e2f0e6;
+      color: #2c5e3b;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    /* FLOAT PROPERTY: Floating images to the left so bios wrap beside them */
+    .member-photo {
+      float: left;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 25px;
+      border: 4px solid #2c5e3b;
+    }
+
+    .member-bio h2 {
+      color: #2c5e3b;
+      margin-bottom: 8px;
+    }
+
+    .member-bio p {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Section -->
+  <nav class="clearfix">
+    <div class="logo">Green Leaf Studio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <header>
+      <h1>Meet Our Team</h1>
+      <p>The dedicated botanical crew keeping our studio fresh, creative, and thriving.</p>
+    </header>
+
+    <!-- Team Member 1 -->
+    <section class="team-member clearfix">
+      <span class="role-badge">Team Lead</span>
+      <img src="https://unsplash.com" alt="Monty the Monstera" class="member-photo">
+      <div class="member-bio">
+        <h2>Monty Monstera</h2>
+        <p>Monty has been leading the studio from the sunny corner window since 2021. Known for branching out into big ideas and welcoming new interns, he thrives in bright indirect light and weekly misting sessions. When he isn't overseeing daily operations, Monty enjoys stretching his leaves toward the afternoon sun.</p>
+      </div>
+    </section>
+
+    <!-- Team Member 2 -->
+    <section class="team-member clearfix">
+      <span class="role-badge">Security & Operations</span>
+      <img src="https://unsplash.com" alt="Sammy the Snake Plant" class="member-photo">
+      <div class="member-bio">
+        <h2>Sammy Sansevieria</h2>
+        <p>Sammy is the toughest member of our crew and handles overnight air purification and office security. Requiring very little maintenance, Sammy stays sharp under tight deadlines and low-light conditions. Colleagues admire his upright posture and calm demeanor during busy product launches.</p>
+      </div>
+    </section>
+
+    <!-- Team Member 3 -->
+    <section class="team-member clearfix">
+      <span class="role-badge">Creative Director</span>
+      <img src="https://unsplash.com" alt="Penny the Pothos" class="member-photo">
+      <div class="member-bio">
+        <h2>Penny Pothos</h2>
+        <p>Penny brings cascading creativity to every bookshelf and filing cabinet in the building. She specializes in rapid growth strategies and connecting different departments together—literally. Penny loves trailing across whiteboards during brainstorming meetings to help teams think outside the pot.</p>
+      </div>
+    </section>
+
+    <!-- Team Member 4 -->
+    <section class="team-member clearfix">
+      <span class="role-badge">Wellness Coordinator</span>
+      <img src="https://unsplash.com" alt="Alvin the Aloe Vera" class="member-photo">
+      <div class="member-bio">
+        <h2>Alvin Aloe</h2>
+        <p>Alvin oversees workplace wellness and first aid on the sunny windowsill. Always ready to soothe a stressful workday or an accidental paper cut, Alvin keeps a cool head when temperatures rise. In his spare time, he enjoys sandy soil mixes and minimal interruptions.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Green Leaf Studio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
